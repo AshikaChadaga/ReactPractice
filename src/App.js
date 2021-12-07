@@ -4,6 +4,7 @@ import State from './pages/state/State';
 import ClassComponent from './pages/class_component/ClassComponent';
 import FunctionalComponent from './pages/functional_component/FunctionalComponent';
 import ClassLifecycle from './pages/class_lifecycle/ClassLifecycle';
+import FunctionLifecycle from './pages/function_lifecycle/FunctionLifecycle';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <State/> */}
       {/* <ClassComponent/> */}
       {/* <FunctionalComponent/> */}
-      <ClassLifecycle color="yellow"/>
+      {/* <ClassLifecycle color="yellow"/> */}
+      <FunctionLifecycle/>
     </div>
   );
 }
