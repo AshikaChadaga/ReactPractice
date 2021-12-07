@@ -7,7 +7,7 @@ export class ClassLifecycle extends Component {
     constructor(props) {
 
         super(props);
-        this.state = { favoritecolor: "red", show: true };
+        this.state = { favoritecolor: "red", show: true, buttonName: "Unmount" };
         console.log(`Inside constructor`);
     }
     // static getDerivedStateFromProps(props, state) {
@@ -41,16 +41,17 @@ export class ClassLifecycle extends Component {
     }
     //Unmounting
     delHeader = () => {
-        this.setState({ show: false });
-    }
-    mountHeader = () => {
-        this.setState({ show: true });
+        this.setState({ show: !this.state.show });
+        if (this.state.show == false)
+            this.setState({ buttonName: "Unmount" });
+        else
+            this.setState({ buttonName: "Mount" });
     }
     render() {
         console.log(`Inside render`);
         let unmount;
-        if (this.state.show){
-            unmount = <Unmount/>
+        if (this.state.show) {
+            unmount = <Unmount />
         };
         return (
             <div>
@@ -60,8 +61,8 @@ export class ClassLifecycle extends Component {
                 <div style={{ marginBottom: "30px" }} id="div2"></div>
                 <h1 style={{ marginBottom: "30px" }}>-----------------------------------------------</h1>
                 {unmount}
-                <Button style={{ marginBottom: "30px", marginRight:"10px" }} onClick={this.delHeader} variant="contained">Unmount</Button>
-                <Button style={{ marginBottom: "30px" }} onClick={this.mountHeader} variant="contained">Mount</Button>
+                <Button style={{ marginBottom: "30px", marginRight: "10px" }} onClick={this.delHeader} variant="contained">{this.state.buttonName}</Button>
+                {/* <Button style={{ marginBottom: "30px" }} onClick={this.mountHeader} variant="contained">Mount</Button> */}
             </div>
         );
     }
