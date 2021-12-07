@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
-  const [count2, setCount2] = useState(0);
 
   //componentDidMount
   useEffect(() => {
