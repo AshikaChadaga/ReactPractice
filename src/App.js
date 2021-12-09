@@ -14,6 +14,7 @@ import ReactPortal from './components/react_portal/ReactPortal';
 import Modal from './components/modal/Modal';
 import HigherOrderComponent from './pages/higher_order_component/HigherOrderComponent';
 import Profiler from './pages/react_proflier/ReactProfiler';
+import ReactUseRef from './pages/react_useref/ReactUseRef';
 
 function App() {
   const showPortal = false;
@@ -49,6 +50,7 @@ function App() {
           <Route path="/react-hooks" element={<ReactHooks />}></Route>
           <Route path="/higher-order-components" element={<HigherOrderComponent />}></Route>
           <Route path="/profiler" element={<Profiler />}></Route>
+          <Route path="/react-use-ref" element={<ReactUseRef />}></Route>
         </Routes>
       </Router>
       {showPortal ?
