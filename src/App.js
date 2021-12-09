@@ -15,6 +15,7 @@ import Modal from './components/modal/Modal';
 import HigherOrderComponent from './pages/higher_order_component/HigherOrderComponent';
 import Profiler from './pages/react_proflier/ReactProfiler';
 import ReactUseRef from './pages/react_useref/ReactUseRef';
+import ReactUseContext from './pages/react_usecontext/ReactUseContext';
 
 function App() {
   const showPortal = false;
@@ -51,6 +52,7 @@ function App() {
           <Route path="/higher-order-components" element={<HigherOrderComponent />}></Route>
           <Route path="/profiler" element={<Profiler />}></Route>
           <Route path="/react-use-ref" element={<ReactUseRef />}></Route>
+          <Route path="/react-use-context" element={<ReactUseContext />}></Route>
         </Routes>
       </Router>
       {showPortal ?
