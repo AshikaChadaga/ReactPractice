@@ -30,6 +30,9 @@ function Homepage() {
                 <li style={{margin:"30px"}}>
                     <Link style={{ textDecoration: "none", fontSize:"20px" }} to="/higher-order-components">HIGHER ORDER COMPONENTS</Link>
                 </li>
+                <li style={{margin:"30px"}}>
+                    <Link style={{ textDecoration: "none", fontSize:"20px" }} to="/profiler">PROFILER</Link>
+                </li>
             </ul>
         </div>
     )
