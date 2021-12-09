@@ -36,6 +36,9 @@ function Homepage() {
                 <li style={{margin:"30px"}}>
                     <Link style={{ textDecoration: "none", fontSize:"20px" }} to="/react-use-ref">REACT USEREF</Link>
                 </li>
+                <li style={{margin:"30px"}}>
+                    <Link style={{ textDecoration: "none", fontSize:"20px" }} to="/react-use-context">REACT USECONTEXT</Link>
+                </li>
             </ul>
         </div>
     )
