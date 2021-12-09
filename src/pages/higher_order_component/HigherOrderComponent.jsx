@@ -1,6 +1,6 @@
 import React from 'react';
 import EnhancedLikes from '../../components/enhanced_likes/EnhancedLikes';
-import EnhancedComments from '../../components/enhanced_comments.jsx/EnhancedComments';
+import EnhancedComments from '../../components/enhanced_comments/EnhancedComments';
 
 function HigherOrderComponent() {
     return (
